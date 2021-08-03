@@ -44,7 +44,7 @@
                         </a>
                     </div>
                     <div class="col-md-4" style="float: right; padding-top: 30px">
-                        <h2 class="logo_text_DSp" style="text-align: right; color: darkblue"><b>Family Particular</b></h2>
+                        <h2 class="logo_text_DSp" style="text-align: right; color: darkblue"><b>Family Particular  test</b></h2>
                     </div>
                 </div>
             </div>
