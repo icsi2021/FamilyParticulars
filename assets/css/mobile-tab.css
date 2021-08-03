@@ -1,0 +1,370 @@
+/**
+ * Mobiles and Tablets CSS
+ * 
+ * This File keep separate CSS for Media Queries.
+ * Purpose of using Separate Stylesheet is to keep
+ * Main CSS file clean and more understandable.
+ */
+@media (min-width:1170px) and (max-width:1400px){.cap-title{font-size:60px;line-height:60px;}
+}
+
+@media only screen and (min-width:992px) and (max-width:1169px) {
+    .slide {
+        height:auto;
+    }
+    .slide .banner-text {
+        padding-top: 23px; left: calc(35% + 200px);
+    }
+
+    .emergency-box h3 {
+        font-size: 26px; margin-bottom:5px;
+    }
+
+    .emergency-box h5 {
+        font-size: 20px; margin-bottom: 16px;
+    }
+
+    .shop_table {
+        overflow-y:auto;
+    }
+
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .msme_logo,.phone_number,.appointment_top {
+        display:none;
+    }
+
+    .slide .banner-text {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        left: calc(25% + 200px);
+        position: absolute;
+        right: 80px;
+    }
+
+    .emergency-box h3 {
+        font-size:18px; margin-bottom: 10px;
+    }
+
+    .emergency-box h6 {
+        font-size: 14px; margin-bottom: 10px;
+    }
+
+    .emergency-box h5 {
+        font-size: 18px; margin-bottom: 10px;
+    }
+
+    .our-network {
+        height:auto;
+    }
+
+    .phone_email {
+        display:none;
+    }
+
+    .logo {
+        margin:0px auto;
+        float:none;
+    }
+
+    .price-list-wrap {
+        min-height:auto !important;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    .box {
+        margin-bottom:0px;
+    }
+
+	.boxed {
+		max-width:100%;
+		min-width:240px; 
+		margin:auto;
+		border-left:0px;
+		border-right:0px;
+	}
+	.topBar .columns {
+		text-align:center; 
+	} 
+	.topBar .menu>li>a {
+		padding-left:5px;
+		padding-right:5px;
+		text-align:center; 
+		border:0px;
+	}
+	.topBar .menu {
+		text-align:center;
+		float:none;
+		margin:auto;
+		display:block; 
+	} 
+	.topBar .row .columns:last-child .menu li:nth-child(-n+2) {
+		display:block;
+	}
+	.topBar ul .first-social {
+		padding-left:0px; 
+	}
+	.topBar .columns:last-child {
+		margin-top:0px; 
+	}
+
+    .row {
+        display:block !important;
+    }
+	.header .logo {
+		padding-top:0px;
+		padding-bottom:0px; 
+		text-align:center;
+	}
+	.header .medium-offset-5 {
+		margin-left:0px;
+		margin-top:10px;
+		margin-bottom:0px !important; 
+		display:none;
+	}
+	.header .icon-box .info-side {
+		width:100%; 
+		margin-left:0px;
+	}
+	.header .small-box {
+		width:100%;
+		margin-top:10px !important;
+		margin-bottom:0px;
+		text-align:center;
+	}
+	.header .icon-side {
+		display:none; 
+	}
+	.top-bar-title {
+		display:block; 
+		line-height:46px;
+		float:none;
+		padding-right:0px;
+		padding-top:15px;
+	}  
+	.top-bar-title span:first-child {
+		display:table;
+		margin:auto; 
+	}
+	.top-bar-title:after {
+		clear:both;
+		display:table;
+		content:""; 
+	}
+	.navigation-icon-title { 
+		display:none;
+	}
+	.menu.accordion-menu {
+		top:0px; 
+	}
+	.top-bar .menu ul li a {
+		 padding-left:30px;
+	}
+	.blog-post .blog-thumb .blog-meta,
+	.blog-post .blog-thumb .image-side {
+		width:100%; 
+		height:auto;
+	}
+	.blog-post .blog-thumb .blog-meta {
+		text-align:left; 
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	.blog-meta .post-author-image,
+	.blog-meta .post-author-image img { 
+		width:45px;
+		height:auto;
+		margin-right:15px;
+		margin-bottom:0px;
+		margin-top:0px;
+		padding-top:0px;
+	}
+	.blog-meta .meta-seprator {
+		display:none; 
+	}
+	.blog-meta .post-date { 
+		margin-bottom:0px;
+		float:right;
+		padding-bottom:0px;
+		width:auto;
+		position:relative;
+		line-height:45px;
+	}
+	.blog-meta .post-author { 
+		line-height:46px;
+	}
+	.blog-rating .menu a {
+		padding-left:5px;
+		padding-right:5px; 
+	}
+	.blog-thumb .image-side img {
+		width:100%;
+		height:auto; 
+	}
+	.form-content .small-12,
+	.contact-form .small-12 { 
+		margin-top:0px !important;
+		margin-bottom:0px !important;
+	}
+	.form-content { 
+		padding-left:0.9375rem !important;
+		padding-right:0.9375rem !important; 
+        margin:10px 0px !important;
+	}
+	.search-wrap a {
+		display:inline-block;
+		float:none; 
+	}
+	.search-wrap {
+		text-align:center; 
+	}
+	.search-dropdown input[type=text] {
+		font-size:18px; 
+	}
+    .slide {
+        height:auto;
+    }
+	.slide .banner-text {
+		width:50%;
+		padding-top:30px;
+		padding-bottom:30px;
+		text-align:left;
+        right: 10px;
+        left:auto;
+        top: 65px;
+	}
+	.slide .banner-text h2 {
+		font-size: 13px;
+		line-height:20px;
+	}
+    .slide .banner-text h3 {
+        font-size:13px;
+    }
+	.owl-nav{
+		display:none;
+	}
+    .owl-controls {
+        bottom:0px;
+    }
+	.banner-form {
+		background-color: rgba(0,0,0,0.8);
+		color: #fff;
+		padding: 78px 30px 40px 30px;
+		width:calc(100% - 0px);
+		height: auto;
+		position:static;     
+	} 
+	.about-us .button {
+		margin-bottom: 5px;
+	} 
+	.highlight-banner .highlight-banner-bg {
+		 background:rgba(47,47,47,.9);
+	} 
+	.highlight-banner .highlight-banner-info h3,
+	.highlight-banner .highlight-banner-info h3 span {
+		font-size:30px; 
+	}
+	.general-dent img { 
+		width:100%;
+		height:auto;
+	}
+	.our-team .doctor,
+	.information-box {
+		padding:0px; 
+	}
+	.testimonial .testimonial-thumb img {
+		width:75px;
+		height:75px;
+		border-radius:100%; 
+	}
+	.testimonial .testimonial-detail { 
+		width:calc(100% - 95px);
+	}
+	.bran-logo { 
+		padding: 0px;
+		margin-top: 0.9375rem;
+		margin-bottom: 0.9375rem;
+		width: calc(100% - 0.9375rem);
+		padding-left: 4rem;
+		padding-right: 4rem;
+		height: auto !important;
+		line-height: 1px;	
+	}
+	.footer-top .blue-bg {
+		margin-top:0px !important;
+		margin-bottom:0px !important; 
+	}
+	.blue-bg:nth-child(1) {
+		border-bottom-left-radius:0px; 
+	}
+	.blue-bg:last-child { 
+		border-bottom-right-radius:0px;
+	}
+	.brands-wrapper .bran-logo:first-child {
+		margin-top:0px; 
+	}
+	.brands-wrapper .bran-logo:last-child { 
+		margin-bottom:0px;
+	}
+	.bran-logo .thumbnail {
+		width:100%;
+		height:auto; 
+	}
+	.row .service-wrap .small-12,
+	.row .small-12 {
+		margin-top:0rem;
+		margin-bottom:0rem; 
+	}
+	.row .service-wrap .small-12:last-child,
+	.row .small-12:last-child { 
+		margin-bottom:0px;
+	}
+	.row .service-wrap .small-12:first-child,
+	.row .small-12:first-child {
+		margin-top:0px; 
+	}
+	.navigation .small-12,
+	.header .small-12 {
+		margin-top:0px;
+		margin-bottom:0px; 
+	}
+	
+	.megamenu .link-list{
+		margin:0px !important;
+	}
+	
+	.left-side{display:none;}
+
+    .msme_logo, .phone_number, .appointment_top, .search-wrap {
+        display:none;
+    } 
+
+    .margin-top {
+        margin-top: 25px !important;
+    }
+
+    .shop_table{
+        overflow-y:scroll;
+        width:100%;
+    }
+
+    .form-content .form-group {
+        margin-bottom:15px !important;
+    }
+
+    .our-network {
+        height:auto;
+    }
+
+    .top-bar {
+        height:50px;
+    }
+
+    .emergency-box {
+        margin-top:20px;
+    }
+
+
+}

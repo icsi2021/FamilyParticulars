@@ -1,0 +1,161 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainFile.master.cs" Inherits="MainFile" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Family Particular</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style type="text/css">
+    .stylmain {
+    }
+
+    .styl a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .styl a:hover {
+            background-color: #ddd;
+        }
+
+    .stylmain:hover .styl {
+        display: block;
+    }
+
+    .stylmain:hover .styl {
+        background-color: #3e8e41;
+    }
+</style>
+<style type="text/css">
+    .imgbtns {
+        margin: 10px 5px 10px 5px;
+    }
+
+    .imgbtns2 {
+        margin: -8px 0px 0px 0px;
+    }
+
+    .btn {
+        height: 35px;
+        border: none;
+    }
+
+    #TranType, #lblTo {
+        cursor: pointer;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .grdrqr {
+        background: red;
+        color: white;
+        border: 1px solid red;
+    }
+
+    select, input[type=text], input[type=number] {
+        border: 1px solid #ccc;
+    }
+
+        select:focus, input[type=text]:focus, input[type=number]:focus, textarea:focus {
+            border: 1px solid #ccc;
+        }
+
+    label, p, ul, ol, a, blockquote, input, textarea, select, [type=date], [type=text], [type=email], span {
+        font-size: 14px;
+        line-height: 25px;
+        color: #5d5d5d;
+    }
+</style>
+<body>
+    <form id="form1" runat="server">
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; margin-top: -50px; height: 30px">
+            <!---------- NEW HEADER FROM HERE ---->
+            <tr align="center">
+                <td valign="top" align="center">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <br />
+                            <td align="left" valign="top">
+                                <asp:Image runat="server" ID="TestImage" ImageUrl="~/Images/logo_full.png" Width="45%" />
+                            </td>
+                            <td>
+                                <span style="margin-left: -100px;">
+                                    <span style="padding-bottom: 4px; padding-top: 2px; margin-left: 199px">Welcome:</span>&nbsp;&nbsp;<asp:Label ID="lblwelcomemessage" runat="server" Style="padding-bottom: 4px; padding-top: 2px;" /><br />
+                                    <span style="padding-bottom: 4px; padding-top: 2px; margin-left: 100px">Date & Time:</span>&nbsp;&nbsp;<asp:Label ID="lbldate" runat="server" Style="padding-bottom: 4px; padding-top: 2px;" /><br />
+                                    <span style="padding-bottom: 4px; padding-top: 2px; margin-left: 100px">User ID:</span>&nbsp;&nbsp;<asp:Label ID="lblLabel" runat="server" Style="padding-bottom: 4px; padding-top: 2px;" />&nbsp;                       
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="height: -20px;">
+                        <asp:Button ID="Btnhome" runat="server" Text="Home" CssClass="col-md-4"
+                            Style="height: 35px; width: 140px; font-size: 20px; border-radius: 10px; margin: 5px 5px 0px 0px; color: white; background-color: #083b82;" CausesValidation="false" OnClick="btnback_Click" />
+
+                        <asp:Button ID="btnmasterdata" runat="server" Text="Relation Master" CssClass="col-md-4"
+                            Style="height: 35px; width: 165px; font-size: 20px; border-radius: 10px; margin: 5px 5px 0px 0px; color: white; background-color: #083b82;" CausesValidation="false" OnClick="btnmasterdata_Click" />
+
+                        <asp:Button ID="btndashboard" runat="server" CssClass="col-md-4" Style="height: 35px; width: 170px; font-size: 20px; border-radius: 10px; margin: 5px 5px 0px 0px; color: white; background-color: #083b82;"
+                            Text="Emp Detail" CausesValidation="false" OnClick="btndashboard_Click" />
+
+                        <asp:Button ID="btnfamilydetail" runat="server" Text="Family Details" CssClass="col-md-4"
+                            Style="height: 35px; width: 160px; font-size: 20px; border-radius: 10px; margin: 5px 5px 0px 0px; color: white; background-color: #083b82;" CausesValidation="false" OnClick="btnfamilydetail_Click" />
+
+                        <asp:Button ID="btnnomineedetails" runat="server" Text="Nominee Details" CssClass="col-md-4"
+                            Style="height: 35px; width: 175px; font-size: 20px; border-radius: 10px; margin: 5px 5px 0px 0px; color: white; background-color: #083b82;" CausesValidation="false" OnClick="btnnomineedetails_Click" />
+
+                        <asp:Button ID="btnedit" runat="server" Text="Edit" CssClass="col-md-4" Style="height: 35px; width: 170px; font-size: 20px; border-radius: 10px; margin: 5px 5px 0px 0px; color: white; background-color: #083b82;"
+                            CausesValidation="false" OnClick="btnedit_Click" />
+
+
+                        <asp:Button ID="btnnewemployee" runat="server" Text="Add Retired Emp" CssClass="col-md-4"
+                            Style="height: 35px; width: 190px; font-size: 20px; border-radius: 10px; margin: 5px 5px 0px 0px; color: white; background-color: #083b82;" CausesValidation="false" OnClick="btnnewemployee_Click" />
+
+                        <asp:Button ID="btnaddrelation" runat="server" Text="Master Relation" CssClass="col-md-4"
+                            Style="height: 35px; width: 170px; font-size: 20px; border-radius: 10px; margin: 5px 5px 0px 0px; color: white; background-color: #083b82;" CausesValidation="false" Visible="false" OnClick="btnaddrelation_Click" />
+
+                        <asp:Button ID="btnreport" runat="server" CssClass="col-md-4" Style="height: 35px; width: 140px; font-size: 20px; border-radius: 10px; margin: 5px 5px 0px 0px; color: white; background-color: #083b82;"
+                            Text="Report" CausesValidation="false" OnClick="btnreport_Click" />
+
+                        <asp:Button ID="btnAtachment" runat="server" CssClass="col-md-4" Style="height: 35px; width: 170px; font-size: 20px; border-radius: 10px; margin: 5px 5px 0px 0px; color: white; background-color: #083b82;"
+                            Text="Attachment" CausesValidation="false" OnClick="btnAtachment_Click" />
+
+                        <asp:Button ID="btnRefresh" runat="server" Text="Refresh Data" CssClass="col-md-4"
+                            Style="height: 35px; width: 170px; font-size: 20px; border-radius: 10px; margin: 5px 5px 0px 0px; color: white; background-color: #083b82;" CausesValidation="false" OnClick="btnRefresh_Click" />
+
+                        <asp:Button ID="btnlogout1" runat="server" Text="Logout" CssClass="col-md-4"
+                            Style="height: 35px; width: 140px; font-size: 20px; border-radius: 10px; margin: 5px 5px 0px 0px; color: white; background-color: #083b82;" CausesValidation="false" OnClick="buttonlogout_Click" />
+                    </div>
+                </td>
+            </tr>
+
+            <!---------- NEW HEADER TILL HERE ---->
+        </table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+
+    <script type="text/javascript">
+        if (/Mobi/.test(navigator.userAgent)) {
+            // if mobile device, use native pickers
+            $(".date input").attr("type", "date");
+            $(".time input").attr("type", "time");
+        } else {
+            // if desktop device, use DateTimePicker    
+            $("#timepicker").datetimepicker({
+                format: "LT",
+                icons: {
+                    up: "fa fa-chevron-up",
+                    down: "fa fa-chevron-down"
+                }
+            });
+        }
+    </script>
+</body>
+</html>
